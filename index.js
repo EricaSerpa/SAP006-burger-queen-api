@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+// eslint-disable-next-line import/extensions
 const routes = require('./server/routes/index');
 
 const app = express();
@@ -16,5 +17,5 @@ app.get('*', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  /* console.log(`Example app listening at http://localhost:${port}`); */
 });
