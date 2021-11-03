@@ -1,9 +1,10 @@
 const { Router } = require('express');
-const ExampleRouter = require('./exampleRouter');
+// eslint-disable-next-line import/extensions
+const productsRoute = require('./productsRoute');
 
 const router = Router();
 
 // aqui vai todas as rotas
-router.use('/example', ExampleRouter);
+router.use('/', productsRoute);
 
 module.exports = router;
